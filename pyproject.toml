@@ -1,0 +1,14 @@
+[build-system]
+requires=["setuptools>=61.0"]
+build-backend="setuptools.build_meta"
+[project]
+name="scopematrix"
+version="0.1.0"
+description="Scope matrix"
+readme="README.md"
+requires-python=">=3.10"
+dependencies=["click>=8.1.0","rich>=13.0.0"]
+[project.scripts]
+scopematrix="scopematrix.cli:main"
+[tool.setuptools.packages.find]
+where=["src"]
