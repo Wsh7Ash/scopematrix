@@ -1,0 +1,11 @@
+# One asset per line; lines starting with '#' are comments.
+www.example.com
+shop.example.com
+admin.example.com
+api.example.net
+staging.example.net
+203.0.113.44
+198.51.100.7
+https://api.other.org/v1/orders
+https://api.other.org/v2/orders
+unrelated-host.io

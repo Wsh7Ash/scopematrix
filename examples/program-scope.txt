@@ -1,0 +1,22 @@
+# Example bug-bounty program scope (fictional targets, for demo only)
+# Format: '+ pattern' includes, '- pattern' excludes. Excludes always win.
+
+# wildcard domain: every subdomain of example.com
++ *.example.com
+
+# explicit hostnames
++ api.example.net
++ staging.example.net
+
+# but never these
+- admin.example.com
+- vpn.example.net
+
+# URL-scoped path (scheme + host + path prefix)
++ https://api.other.org/v1
+
+# an owned IPv4 range
++ 203.0.113.0/24
+
+# a program inbox
++ reports@bugzilla.example.org
